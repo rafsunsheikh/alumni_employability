@@ -51,7 +51,7 @@ def main():
     df[categorical_columns] = df[categorical_columns].fillna('Unknown')
 
     # Select features and target variable
-    features = ['Education Degree', 'Education Major', 'Location City', 'Location State', 'Location Country']
+    features = ['Education Degree', 'Education Major',   'Location Country', 'Location State', 'Location City']
     target = 'Company Industry Name'
 
     # Concatenate text features into a single column for each row
@@ -126,7 +126,7 @@ def main():
 
     ################ Location Country ################
     # Dropdown menu for selecting options
-    st.markdown("<h1 style='text-align: center;'> Where do you want to Work? </h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center;'> What is your location? </h1>", unsafe_allow_html=True)
     st.markdown("<h2 style='text-align: center;'> Country </h2>", unsafe_allow_html=True)
     location_country_options = ['USA', 'Australia', 'Norway', 'United Kingdom', 'Singapore',
        'India', 'United Arab Emirates', 'Finland', 'Canada', 'China',
@@ -201,9 +201,9 @@ def main():
     single_data_point = {
         'Education Degree': education_degree,
         'Education Major': education_major,
-        'Location City': location_city,
-        'Location State': location_state,
         'Location Country': location_country,
+        'Location State': location_state,
+        'Location City': location_city,
     }
 
     # Create a DataFrame for the single data point
