@@ -15,8 +15,8 @@ st.set_page_config(page_title="COMPANY TYPE PREDICTION", page_icon="📈", layou
 
 
 def main():
-    url = "alumni_dataset.csv"
-    df = pd.read_csv(url)
+    # url = "alumni_employability/codes/pages/alumni_dataset.csv"
+    df = pd.read_csv('../datasets/alumni_dataset.csv')
 
     # Filter rows where 'Education Subject' column is 'Business'
     df = df[df['Education Subject'] == 'Business']
