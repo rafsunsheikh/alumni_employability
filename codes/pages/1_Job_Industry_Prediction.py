@@ -15,7 +15,8 @@ st.set_page_config(page_title="JOB INDUSTRY PREDICTION", page_icon="📈", layou
 
 def main():
     
-    df = pd.read_csv('../datasets/alumni_dataset.csv')
+    url ="https://raw.githubusercontent.com/rafsunsheikh/alumni_employability/master/datasets/alumni_dataset.csv"
+    df = pd.read_csv(url)
 
     # Filter rows where 'Education Subject' column is 'Business'
     df = df[df['Education Subject'] == 'Business']
