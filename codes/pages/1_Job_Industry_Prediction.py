@@ -15,7 +15,7 @@ st.set_page_config(page_title="JOB INDUSTRY PREDICTION", page_icon="📈", layou
 
 def main():
     
-    url = "../datasets/alumni_dataset.csv"
+    url = "alumni_dataset.csv"
     df = pd.read_csv(url)
 
     # Filter rows where 'Education Subject' column is 'Business'
